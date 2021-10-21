@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zomato example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Allison', cursive;;
+    }
+    #navbar{
+        background-color: red;
+        height: 60px;
+    }
+    h2{
+        display: inline;
+        color: white;
+        font-size: 40px;
+        margin-left: 10px;
+    }
+    ul,li{
+        display: inline;
+        color: white;
+        font-size: 22px;
+        margin-right: 20px;
+    }
+    ul{
+        float: right;
+    }
+    #bg{
+        height: 400px;
+        background-color: #afacac;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlRS-9ak9yc0eoYBpwEa5VTT4ITRRVaWJuCg&usqp=CAU);
+        
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: ;
+    }
+    .red_text{
+        color: blue;
+    }
+    body{
+        background-color: rgb(202, 198, 198);
+    }
+    #container{
+        /* border: 1px solid black; */
+        max-width: 1400px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .card{
+        /* border: 1px solid black; */
+        background-color: white;
+        width: 23%;
+        float: left;
+        margin: 10px;
+    }
+    .card img{
+        width: 100%;
+        /* float: left; */
+    }
+    .card-body{
+        padding: 20px;
+    }
+    .card h2{
+        color: black;
+    }
+    .btn{
+        width: 100%;
+        background-color: red;
+        border: none;
+        height: 40px;
+        color: white;
+        font-size: 18px;
+        padding: 8px;
+        border-radius: 5px;
+        font-family: 'Allison', cursive;
+    }
+    .btn:hover{
+        background-color: green;
+        cursor: pointer;
+    }
+</style>
+<body>
+    
+    <div id="navbar">
+        <h2>Zomato</h2>
+        <ul>
+            <li>home   </li>
+            <li>resturants  </li>
+            <li>about  </li>
+            <li>contact  </li>
+            
+        </ul>
+    </div>
+
+    <div id="bg">
+    </div>
+
+    <!-- <p>one</p>
+    <p class="red_text">one</p>
+    <p class="red_text">one</p>
+    <p>one</p>
+    <p>one</p>
+    <p class="red_text">one</p>
+
+ -->
+
+    <div id="container">
+        <h1>Resturents Near me</h1>
+        <div class="card">
+            <div class="card-body">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaZftN7CEqG-OuqmSDaV3RT05MjJYZoJ7b_A&usqp=CAU" alt="">
+                <h2>Domino's Pizza</h2>
+                <button class="btn">view menu</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaZftN7CEqG-OuqmSDaV3RT05MjJYZoJ7b_A&usqp=CAU" alt="">
+                <h2>Domino's Pizza</h2>
+                <button class="btn">view menu</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaZftN7CEqG-OuqmSDaV3RT05MjJYZoJ7b_A&usqp=CAU" alt="">
+                <h2>Domino's Pizza</h2>
+                <button class="btn">view menu</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaZftN7CEqG-OuqmSDaV3RT05MjJYZoJ7b_A&usqp=CAU" alt="">
+                <h2>Domino's Pizza</h2>
+                <button class="btn">view menu</button>
+            </div>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>
