@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>button counter</title>
+    
+</head>
+<style>
+    body{
+        background-color: #00a65a;
+    }
+    div{
+        max-width: 300px;
+        margin: auto;
+        margin-top: 200px;
+
+    }
+    p{
+        text-align: center;
+        color: white;
+        font-size: 200px;
+    }
+    button{
+        background-color: red;
+        border: none;
+        width: 140px;
+        height: 30px;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+<script type="text/javascript">
+    // $(document).ready(function(){
+    //     //detect the button clicks
+    //     $('#add').click(function(){
+    //         //fetch the number
+    //         number = Number($('#number').text());
+    //         number = number + 1;
+    //         $('#number').text(number);
+    //     });
+
+    //     $('#sub').click(function(){
+    //         //fetch the number
+    //         number = Number($('#number').text());
+    //         number = number - 1;
+    //         $('#number').text(number);
+    //     });
+    // });
+
+    $(document).ready(function(){
+        var number;
+        //detect the button clicks
+        $('.btn').click(function(){
+            // alert($(this).text());
+            number = Number($('#number').text());
+
+            if($(this).text() === 'add'){
+                number = number + 1;
+            }
+            else{
+                number = number - 1;
+            }
+            $('#number').text(number);
+        })
+    })
+</script>
+<body>
+    <div >
+        <p id="number">0</p>
+        <!-- <button id="add">add</button> -->
+        <button id="add" class="btn">add</button>
+        <button id="sub" class="btn">sub</button>
+    </div>
+</body>
+</html>
